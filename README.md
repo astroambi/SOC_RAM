@@ -14,7 +14,8 @@ A config-driven, multi-instance **UVM (Universal Verification Methodology)** tes
 - **Checking**: A **scoreboard** with an associative-array reference model — every observed write updates the golden model, every observed read is compared against it via `uvm_analysis_port` → `uvm_tlm_analysis_fifo` transaction-level communication.
 - **Coverage**: Functional covergroups cross-binning address ranges against data ranges, separately for read and write traffic, to quantitatively confirm the randomized stimulus actually exercised the full address/data space in combination — not just independently.
 
----
+--- EDAPLAY GROUND LINK -------
+https://edaplayground.com/x/gT2D
 
 ## 2. DUT Architecture
 
@@ -225,3 +226,8 @@ sequenceDiagram
 - **Passive/active agent split** — monitors are always built; drivers/sequencers only exist when `is_active == UVM_ACTIVE`, supporting reuse in passive-only configurations.
 - **Reference-model scoreboarding** — an associative array (`ref_data[]`) provides `.exists()` for free, cleanly separating "address never written" from "real data mismatch."
 - **Cross-coverage, not independent coverage** — address bins are crossed with data bins so coverage holes reveal missing *combinations*, not just missing individual ranges.
+
+
+
+
+## EDA PLAYGROUND LINK IS 
